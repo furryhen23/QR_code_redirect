@@ -1,8 +1,22 @@
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=https://www.youtube.com/" />
+  <script type="text/javascript">
+    // Define the variable for the URL
+    var redirectUrl = "https://www.youtube.com/watch?v=O60ACtH3LfM";
+
+    // Perform the redirect
+    window.onload = function() {
+      window.location.href = redirectUrl;
+    };
+  </script>
 </head>
 <body>
-  Redirecting to <a href="https://www.youtube.com/">newsite.com</a>.
+  Redirecting to <a id="redirectLink" href=""></a>.
+
+  <script type="text/javascript">
+    // Set the href and text for the link dynamically
+    document.getElementById('redirectLink').href = redirectUrl;
+    document.getElementById('redirectLink').textContent = redirectUrl;
+  </script>
 </body>
 </html>
